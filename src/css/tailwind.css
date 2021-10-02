@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom css */
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Custom tailwind classes */
+
+.flex-col-center {
+	@apply flex flex-col justify-center items-center;
+}
+
+.font-press-white {
+	@apply font-press text-white;
+}
+
+.interaction-button {
+	@apply p-3 mt-3 font-press text-gray-900 mb-6
+}
