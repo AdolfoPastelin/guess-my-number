@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="public/img/favicon.ico">
+	<!-- tailwind compiled css -->
+	<link rel="stylesheet" href="public/css/style.css" />
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Tailwind - Guess My Number!</title>
+</head>
+
+<body class="bg-gray-800">
+	<!-- titles and hidden number -->
+	<header class="flex-col-center 2xs:mt-4 xs:mt-10">
+		<h1 id="title" class="font-press-white mt-4 text-xl 2xs:text-2xl 2xs:mt-12 xs:text-3xl">Guess My Number!</h1>
+		<h2 class="font-press-white text-2xs mt-4 2xs:text-xs xs:text-base">(Between 1 and 10)</h2>
+
+		<span class="border-4 w-full absolute top-38 2xs:mt-20 xs:mt-28"></span>
+
+		<div id="number" class="font-press text-6xl text-gray-800 bg-white z-30
+			flex-col-center	my-6 mx-auto w-2/6 h-28 pt-2 pl-1 block 2xs:mt-12 2xs:w-3/12 xs:w-2/12 md:w-1/6 xl:w-1/12">
+			?
+		</div>
+	</header>
+
+	<main class="2xs:grid 2xs:grid-cols-2 2xs:place-items-center 2xs:mt-16">
+		<section class="flex-col-center 2xs:flex 2xs:flex-col-center">
+			<!-- input number -->
+			<input id="guess" type="number" class="border-4 bg-transparent text-center font-press-white
+			h-16 w-5/12 p-3 text-4xl mb-3 2xs:w-4/5" min="1" max="10">
+
+			<!-- check and again buttons -->
+			<div class="3xs:flex 3xs:flex-col 3xs:items-center 3xs:justify-center">
+				<button id="check-btn" class="interaction-button bg-white 3xs:mt-8
+				hover:bg-navy-900 hover:text-white hover:animate-pulse">Check!</button>
+				<button id="again-btn" class="interaction-button bg-white
+				hover:bg-navy-900 hover:text-white hover:animate-pulse
+				2xs:relative">Again!</button>
+			</div>
+		</section>
+
+		<section class="2xs:flex 2xs:flex-col-center">
+			<!-- lives and message -->
+			<div class="font-press-white text-center flex justify-evenly 
+			3xs:flex-col 3xs:mt-4 2xs:text-lg">
+				<p id="message" class="mb-2 2xs:mb-16 md:text-xl xl:text-2xl">
+					Start guessing...<span class="winner-message-icon loser-message-icon"></span>
+				</p>
+				<p class="md:text-xl xl:text-2xl">
+					Lives: <span id="lives" class="-mr-2">3</span> <i id="heart"
+						class="fas fa-heart text-red-600 text-xl leading-3 2xs:text-2xl"></i>
+				</p>
+			</div>
+		</section>
+	</main>
+
+	<script src="public/js/script.min.js"></script>
+</body>
+
+</html>
