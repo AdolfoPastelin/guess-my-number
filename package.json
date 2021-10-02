@@ -5,8 +5,8 @@
 	"main": ".eslintrc.js",
 	"scripts": {
 		"lint": "eslint .",
-		"build-css": "postcss src/tailwind.css -o src/style.css",
-		"prod": "NODE_ENV=production postcss src/style.css -o public/style.css"
+		"build-css": "postcss src/css/tailwind.css -o src/css/style.css",
+		"prod": "NODE_ENV=production postcss src/css/tailwind.css -o public/css/style.css"
 	},
 	"keywords": [],
 	"author": "Adolfo Pastelin",
