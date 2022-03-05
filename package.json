@@ -12,14 +12,15 @@
 	"author": "Adolfo Pastelin",
 	"license": "ISC",
 	"devDependencies": {
-		"autoprefixer": "^10.3.6",
-		"cssnano": "^5.1.0",
-		"eslint": "^7.32.0",
-		"gulp": "^4.0.2",
-		"gulp-concat": "^2.6.1",
-		"gulp-uglify": "^3.0.2",
-		"postcss": "^8.3.8",
-		"postcss-cli": "^9.0.1",
-		"tailwindcss": "^2.2.16"
+		"autoprefixer": "10.3.6",
+		"cssnano": "5.1.0",
+		"eslint": "7.32.0",
+		"gulp": "4.0.2",
+		"gulp-concat": "2.6.1",
+		"gulp-javascript-obfuscator": "1.1.6",
+		"gulp-uglify": "3.0.2",
+		"postcss": "8.3.8",
+		"postcss-cli": "9.0.1",
+		"tailwindcss": "2.2.16"
 	}
 }
