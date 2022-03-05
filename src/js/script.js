@@ -1,8 +1,7 @@
 'use strict'
-//https://stackoverflow.com/questions/19132443/dynamic-creation-of-svg-links-in-javascript
+
 //? ---- Secret number definition ----
 let secretNumber = Math.trunc(Math.random() * 10) + 1
-console.log(secretNumber)
 
 //? ---- fields and body declaration ----
 let lives = 3
@@ -116,7 +115,6 @@ function resetGame() {
 	checkBtn.classList.add('hover:text-white')
 	heart.classList.add('fas')
 	heart.classList.add('fa-heart')
-	console.log(secretNumber)
 }
 
 /**
